@@ -1,4 +1,4 @@
-package com.aswin.customview;
+package com.aswin.CustomArc;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

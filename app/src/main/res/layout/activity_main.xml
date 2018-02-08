@@ -4,16 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.aswin.arcviewtest.MainActivity"
-    android:background="@color/colorPrimary">
+    tools:context="com.aswin.arcviewtest.MainActivity">
 
-   <com.aswin.customview.ArcView
-       android:layout_width="200dp"
-       android:layout_height="200dp"
-       android:layout_centerHorizontal="true"
-       android:layout_centerVertical="true"
-       app:text="70"
-       app:textSize="55dp"
-       app:arcWidth="15dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/layout">
+        <com.aswin.CustomArc.ArcView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:text="80"
+            app:textSize="65sp"
+            app:arcWidth="25dp"
+            app:animatable="false"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout">
+        <com.aswin.CustomArc.ArcView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:textColor="#1971ff"
+            app:arcActiveColor="#1971ff"
+            app:animatable="true"
+            app:arcInactiveColor="#501971ff"
+            app:arcWidth="15px"
+            app:text="65"
+            app:textSize="35dp"/>
+    </RelativeLayout>
 
 </RelativeLayout>

@@ -2,14 +2,13 @@ apply plugin: 'com.android.library'
 
 ext {
     PUBLISH_GROUP_ID = 'com.aswin'
-    PUBLISH_ARTIFACT_ID = 'customview'
+    PUBLISH_ARTIFACT_ID = 'CustomArc'
     PUBLISH_VERSION = '1.0.0'
 }
 
 android {
+
     compileSdkVersion 27
-
-
 
     defaultConfig {
         minSdkVersion 15

@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ArcViewTest.iml" filepath="$PROJECT_DIR$/ArcViewTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/customview/customview.iml" filepath="$PROJECT_DIR$/customview/customview.iml" />
+      <module fileurl="file://D:\android studio projects\ArcViewTest\arc_view\arc-view.iml" filepath="D:\android studio projects\ArcViewTest\arc_view\arc-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arc_view/arc_view.iml" filepath="$PROJECT_DIR$/arc_view/arc_view.iml" />
+      <module fileurl="file://D:\android studio projects\ArcViewTest\arc-view\customview.iml" filepath="D:\android studio projects\ArcViewTest\arc-view\customview.iml" />
     </modules>
   </component>
 </project>
