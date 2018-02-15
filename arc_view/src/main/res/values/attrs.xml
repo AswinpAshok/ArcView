@@ -8,5 +8,6 @@
         <attr name="arcInactiveColor" format="color"/>
         <attr name="arcActiveColor" format="color"/>
         <attr name="animatable" format="boolean"/>
+        <attr name="progressInPercentage" format="boolean"/>
     </declare-styleable>
 </resources>

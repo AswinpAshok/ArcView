@@ -37,7 +37,8 @@
             app:arcInactiveColor="#501971ff"
             app:arcWidth="15px"
             app:text="65"
-            app:textSize="35dp"/>
+            app:textSize="35dp"
+            app:progressInPercentage="true"/>
     </RelativeLayout>
 
 </RelativeLayout>

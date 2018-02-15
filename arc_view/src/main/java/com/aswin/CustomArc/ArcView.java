@@ -23,7 +23,7 @@ public class ArcView extends View {
     private int finalViewHeight,finalViewWidth;
     private RectF bounds;
     private float strokeWidth,mTextSize,mDialSize;
-    private boolean animatable,isLastSection=false;
+    private boolean animatable,progressInPercentage,isLastSection=false;
     private float section;
     private float progress;
     private String progressString="";
@@ -55,23 +55,25 @@ public class ArcView extends View {
                 0, 0);
         try {
             mTextSize=a.getDimensionPixelSize(R.styleable.ArcView_textSize,0);
-            mDialSize=a.getDimensionPixelSize(R.styleable.ArcView_arcWidth,0);
+            mDialSize=a.getDimensionPixelSize(R.styleable.ArcView_arcWidth,10);
             progressString=a.getString(R.styleable.ArcView_text);
             dialInactiveColor=a.getColor(R.styleable.ArcView_arcInactiveColor,Color.parseColor("#50ffffff"));
             dialActiveColor=a.getColor(R.styleable.ArcView_arcActiveColor,Color.WHITE);
             textColor=a.getColor(R.styleable.ArcView_textColor,Color.WHITE);
             animatable=a.getBoolean(R.styleable.ArcView_animatable,true);
+            progressInPercentage=a.getBoolean(R.styleable.ArcView_progressInPercentage,false);
             try {
                 progress = Integer.parseInt(progressString);
                 progress=300*progress/100;
             }catch (NumberFormatException e){
-                e.printStackTrace();
+
+            }
+            if(progressInPercentage){
+                this.progressString=progressString+"%";
             }
         } finally {
             a.recycle();
         }
-
-
 
 
         mBackPaint=new Paint();
