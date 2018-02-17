@@ -27,6 +27,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/layout">
         <com.aswin.CustomArc.ArcView
+            android:id="@+id/arc"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_centerVertical="true"
@@ -36,7 +37,6 @@
             app:animatable="true"
             app:arcInactiveColor="#501971ff"
             app:arcWidth="15px"
-            app:text="65"
             app:textSize="35dp"
             app:progressInPercentage="true"/>
     </RelativeLayout>

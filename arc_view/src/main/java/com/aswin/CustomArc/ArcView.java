@@ -23,7 +23,7 @@ public class ArcView extends View {
     private int finalViewHeight,finalViewWidth;
     private RectF bounds;
     private float strokeWidth,mTextSize,mDialSize;
-    private boolean animatable,progressInPercentage,isLastSection=false;
+    private boolean animatable,progressInPercentage=false,isLastSection=false;
     private float section;
     private float progress;
     private String progressString="";
@@ -34,7 +34,11 @@ public class ArcView extends View {
 
     public void setProgress(int progress) {
         this.progress = 300*progress/100;
-        this.progressString=String.valueOf(progress);
+        if(progressInPercentage) {
+            this.progressString = String.valueOf(progress)+"%";
+        }else {
+            this.progressString = String.valueOf(progress);
+        }
     }
 
     public void setAnimatable(boolean animatable) {
