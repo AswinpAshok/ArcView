@@ -23,6 +23,7 @@ to your app level gradle file.
 * `arcActiveColor` as color string : To specify color of active portion of arc (default white).
 * `arcInactiveColor` as color string : To specify color of inactive portion of arc (default whote having 50% opacity).
 * `animatable` as boolean : To specify wheather to animate view or not. (default `true`)
+* `progressInPercentage` as boolean : To specify weather progress should show % sign or not (default false).
 
 ## Usage 
 **xml**
@@ -37,7 +38,8 @@ to your app level gradle file.
             app:arcWidth="15px"
             app:arcActiveColor="#1971ff"
             app:arcInactiveColor="#501971ff"
-            app:animatable="true"/>
+            app:animatable="true"
+            app"progressInPercentage="true"/>
             
 **Java**
 
