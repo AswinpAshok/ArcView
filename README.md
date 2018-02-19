@@ -5,7 +5,7 @@ Custom android view inspired from clean master
 
 To use this library, add
 
-    compile 'com.aswin:CustomArc:1.0.0'
+    compile 'com.aswin:CustomArc:1.0.2'
     
 to your app level gradle file.
  
