@@ -39,7 +39,7 @@ to your app level gradle file.
             app:arcActiveColor="#1971ff"
             app:arcInactiveColor="#501971ff"
             app:animatable="true"
-            app"progressInPercentage="true"/>
+            app:progressInPercentage="true"/>
             
 **Java**
 
